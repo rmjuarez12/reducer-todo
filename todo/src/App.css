@@ -1,0 +1,4 @@
+.task-list .completed {
+  color: red;
+  text-decoration: line-through;
+}

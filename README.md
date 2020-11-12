@@ -14,15 +14,15 @@ In this project, you build an app that let's you display a todo list from reduce
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd reducer-todo`.
-- [ ] Create a new react app running `npx create-react-app todo --use-npm`.
-- [ ] CD into the react app directory `cd todo`.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository in your terminal.
+- [x] CD into the project base directory `cd reducer-todo`.
+- [x] Create a new react app running `npx create-react-app todo --use-npm`.
+- [x] CD into the react app directory `cd todo`.
+- [x] Start up the app using `npm start`.
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2a: Minimum Viable Product
 
@@ -33,8 +33,8 @@ In this project, you build an app that let's you display a todo list from reduce
 
 #### Build a simple reducer and initial state
 
-- In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
-- In the same file, build your initial state object that has a list of todos with the following shape:
+- [x] In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
+- [x] In the same file, build your initial state object that has a list of todos with the following shape:
 
 ```js
 {
@@ -44,33 +44,33 @@ In this project, you build an app that let's you display a todo list from reduce
 }
 ```
 
-- Export both the reducer and the initial state object
+- [x] Export both the reducer and the initial state object
 
 #### Set up state in your component
 
 You get to choose how you want to set up your components. Please don't just do this all inside App. I know it is a small and simple project, but you will do yourself a great service by setting your app up as if it were going to be a larger application
 
-- Using the `reducer` hook, set up state in your component. Think about what you'll need in order to use the reducer hook, and think about what it returns.
-- Now render your list of todos from your reducer in your app
+- [x] Using the `reducer` hook, set up state in your component. Think about what you'll need in order to use the reducer hook, and think about what it returns.
+- [x] Now render your list of todos from your reducer in your app
 
 #### Adding todos
 
-- Build a form to add todos to your list
-- Build a function that will dispatch an action to add a new todo
-- Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
+- [x] Build a form to add todos to your list
+- [x] Build a function that will dispatch an action to add a new todo
+- [x] Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
 
 #### Toggle the completed field
 
-- Build a function that will dispatch an action to toggle a todo's completed field
-- Invoke this new function when you click on a todo
-- Style your todo to somehow show that it is completed (be creative here!)
-- Write the `case` in your reducer for toggling the completed property
+- [x] Build a function that will dispatch an action to toggle a todo's completed field
+- [x] Invoke this new function when you click on a todo
+- [x] Style your todo to somehow show that it is completed (be creative here!)
+- [x] Write the `case` in your reducer for toggling the completed property
 
 #### Clearing completed todos
 
-- Build a function that will dispatch an action to filter out any completed todos
-- Invoke this new function when you click on a "Clear completed" button
-- Write the `case` in your reducer for filtering completed todos
+- [x] Build a function that will dispatch an action to filter out any completed todos
+- [x] Invoke this new function when you click on a "Clear completed" button
+- [x] Write the `case` in your reducer for filtering completed todos
 
 ### Task 3: Stretch Problems
 
@@ -82,5 +82,6 @@ After finishing your required elements, you can push your work further. These go
 - Have fun with the styling. Make this something you'd be proud to show off!
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Submit the link to your branch to Canvas
+
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+- [x] Submit the link to your branch to Canvas
