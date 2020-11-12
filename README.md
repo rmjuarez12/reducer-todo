@@ -68,9 +68,9 @@ You get to choose how you want to set up your components. Please don't just do t
 
 #### Clearing completed todos
 
-- Build a function that will dispatch an action to filter out any completed todos
-- Invoke this new function when you click on a "Clear completed" button
-- Write the `case` in your reducer for filtering completed todos
+- [x] Build a function that will dispatch an action to filter out any completed todos
+- [x] Invoke this new function when you click on a "Clear completed" button
+- [x] Write the `case` in your reducer for filtering completed todos
 
 ### Task 3: Stretch Problems
 
@@ -83,5 +83,5 @@ After finishing your required elements, you can push your work further. These go
 
 ## Submission Format
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
-- [ ] Submit the link to your branch to Canvas
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+- [x] Submit the link to your branch to Canvas

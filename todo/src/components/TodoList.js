@@ -7,6 +7,7 @@ import {
   todoReducer,
   ADD_TASK,
   MARK_COMPLETE,
+  CLEAR_COMPLETED,
 } from "../reducers/todoReducer";
 
 // Import Components
@@ -48,6 +49,13 @@ export default function TodoList() {
     });
   };
 
+  // Handle when you click the clear completed
+  const clearCompleted = () => {
+    dispatch({
+      type: CLEAR_COMPLETED,
+    });
+  };
+
   return (
     <div>
       <form onSubmit={handleSubmi}>
@@ -59,6 +67,7 @@ export default function TodoList() {
         />
         <button>Add Task</button>
       </form>
+      <button onClick={clearCompleted}>Clear Completed</button>
       {state.todo.length > 0 && (
         <ul className='task-list'>
           {state.todo.map((item) => {

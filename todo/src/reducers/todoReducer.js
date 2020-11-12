@@ -1,6 +1,7 @@
 // Setup action global vars
 export const ADD_TASK = "ADD_TASK";
 export const MARK_COMPLETE = "MARK_COMPLETE";
+export const CLEAR_COMPLETED = "CLEAR_COMPLETED";
 export const TOGGLE_EDITING = "TOGLE_EDITING";
 
 export const initialItemState = {
@@ -39,6 +40,16 @@ export const todoReducer = (state, action) => {
       return {
         ...state,
         todo: completedTask,
+      };
+
+    case CLEAR_COMPLETED:
+      const clearCompleted = state.todo.filter(
+        (item) => item.completed === false
+      );
+
+      return {
+        ...state,
+        todo: clearCompleted,
       };
     default:
       return state;
