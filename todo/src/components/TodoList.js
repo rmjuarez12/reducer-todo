@@ -8,14 +8,28 @@ import { initialItemState, todoReducer } from "../reducers/todoReducer";
 import TodoItem from "./TodoItem";
 
 export default function TodoList() {
-  // State to add new ToDo items
-  const [todoItem, setTodoItem] = useState("");
+  // State to the add new task field
+  const [newTaskItem, setNewTaskItem] = useState("");
 
   // Reducer to be used
   const [state, dispatch] = useReducer(todoReducer, initialItemState);
 
+  // Handle text input changes
+  const handleChanges = (e) => {
+    setNewTaskItem(e.target.value);
+  };
+
   return (
     <div>
+      <form>
+        <input
+          onChange={handleChanges}
+          type='text'
+          placeholder='Add New Task'
+          value={newTaskItem}
+        />
+        <button>Add Task</button>
+      </form>
       {state.todo.length > 0 && (
         <ul>
           {state.todo.map((item) => {
